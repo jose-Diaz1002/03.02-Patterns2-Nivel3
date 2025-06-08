@@ -10,13 +10,13 @@ public class Main {
 
         ShoesStore store = new ShoesStore();
 
-        System.out.println("=== Credit Card Checkout ===");
+
         store.checkout(new CreditCardPayment());
 
-        System.out.println("\n=== Paypal Checkout ===");
+        System.out.println("\n--------------------");
         store.checkout(new PaypalPayment());
 
-        System.out.println("\n=== Bank Debit Checkout ===");
+        System.out.println("\n-------------------");
         store.checkout(new BankDebitPayment());
 
     }
